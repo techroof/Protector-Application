@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:paddingEnd="10dp"
+    android:paddingStart="10dp"
+    tools:context="com.protector.saad.protectorapplication.SettingActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="88dp"
+        android:background="@drawable/btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView4">
+
+        <RelativeLayout
+            android:id="@+id/l1"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                app:srcCompat="@drawable/yes_sign" />
+
+            <EditText
+                android:id="@+id/settingNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:textSize="14sp"
+                android:textColorHint="#7b7b7b"
+
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l1">
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                app:srcCompat="@drawable/yes_sign" />
+
+            <EditText
+                android:id="@+id/settingEmailET"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:textColorHint="#7b7b7b"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:background="@drawable/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/settingButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout1">
+
+
+        <RelativeLayout
+            android:id="@+id/numb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/num1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hotline_double_tap_to_open_contacts"
+                android:inputType="phone"
+                android:textColor="@android:color/white"
+                android:textColorHint="#7b7b7b"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/yes_sign" />
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/numb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/numb1">
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/yes_sign" />
+
+            <EditText
+                android:id="@+id/num2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/friends_and_family_double_tap_to_open_contacts"
+                android:inputType="phone"
+                android:textColor="@android:color/white"
+
+                android:textColorHint="#7b7b7b"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/numb3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/numb2">
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/yes_sign" />
+
+            <EditText
+                android:id="@+id/num3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:hint="@string/friends_and_family_double_tap_to_open_contacts"
+                android:inputType="phone"
+                android:textColor="@android:color/white"
+                android:textColorHint="#7b7b7b"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/numb4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/numb3">
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/yes_sign" />
+
+            <EditText
+                android:id="@+id/num4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/friends_and_family_double_tap_to_open_contacts"
+                android:inputType="phone"
+                android:textColor="@android:color/white"
+
+                android:textColorHint="#7b7b7b"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/numb5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/numb4">
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/yes_sign" />
+
+            <EditText
+                android:id="@+id/num5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/friends_and_family_double_tap_to_open_contacts"
+                android:inputType="phone"
+                android:textColor="@android:color/white"
+
+                android:textColorHint="#7b7b7b"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/settingBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/numb5">
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/settingButton"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/gradient2"
+        android:text="@string/home"
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout2"
+        app:layout_constraintVertical_bias="0.578" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="172dp"
+        android:layout_height="166dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/layout1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pic" />
+
+</android.support.constraint.ConstraintLayout>

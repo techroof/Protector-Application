@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+
+    tools:context="com.protector.saad.protectorapplication.MainActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:background="@drawable/gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/name">
+
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/location_name_updating"
+        android:textColor="#ffffff"
+        android:textColorHint="#7b7b7b"
+        android:textSize="14sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/lat"
+        app:layout_constraintTop_toBottomOf="@+id/main_tool_bar" />
+
+    <EditText
+        android:id="@+id/lat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+
+        android:hint="@string/latitude_updating"
+        android:textColor="#ffffff"
+        android:textColorHint="#7b7b7b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintBottom_toTopOf="@+id/longi"
+        />
+
+    <EditText
+        android:id="@+id/longi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lat"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textSize="14sp"
+
+        android:layout_marginTop="8dp"
+        android:hint="@string/longitude_updating"
+        android:textColor="#ffffff"
+        android:textColorHint="#7b7b7b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lat"
+        app:layout_constraintBottom_toTopOf="@+id/scaredBtn"/>
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mapBtn"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/address_updating"
+        android:maxLines="2"
+        android:textSize="14sp"
+
+        android:scrollbars="vertical"
+        android:textColor="#ffffff"
+        android:textColorHint="#7b7b7b"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapBtn" />
+
+
+    <ImageView
+        android:id="@+id/dangerbtn"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/scaredBtn"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/danger_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scaredBtn"
+        app:layout_constraintBottom_toTopOf="@+id/mapBtn"/>
+
+    <ImageView
+        android:id="@+id/scaredBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/longi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/scared_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/longi"
+        app:layout_constraintBottom_toTopOf="@+id/dangerbtn"/>
+
+    <ImageView
+        android:id="@+id/hotlineBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/scaredBtn"
+        android:layout_centerVertical="true"
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/hotline_button"
+        app:layout_constraintBottom_toTopOf="@+id/mapBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dangerbtn"
+        app:layout_constraintTop_toBottomOf="@+id/scaredBtn" />
+
+    <ImageView
+        android:id="@+id/safeBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/scaredBtn"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/safe_button"
+        app:layout_constraintBottom_toTopOf="@+id/mapBtn"
+        app:layout_constraintEnd_toStartOf="@+id/dangerbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scaredBtn" />
+
+    <ImageView
+        android:id="@+id/mapBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/dangerbtn"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/map_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dangerbtn"
+        app:layout_constraintBottom_toTopOf="@+id/address"/>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
